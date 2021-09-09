@@ -1,0 +1,8 @@
+Comando para criação de projeto React:
+npx create-react-app nome-do-projeto
+
+para iniciar o servidor:
+npm start
+
+para instalar o de rotas
+npm i react-router-dom --save

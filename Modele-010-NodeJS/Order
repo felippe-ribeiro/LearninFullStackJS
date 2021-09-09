@@ -1,0 +1,13 @@
+001 - Node-001
+002 - to-do-list
+    Comandos usados:
+        npm init
+        npm install express --save
+        npm install nodemon --save-dev //servidor de web
+        npx nodemon --> serve para iniciar o servidor
+        MongoDB:
+            npm install mongoose --save
+        EJS - Páginas Dinamicas -- embutir códig js e renderizar
+            npm install ejs --save
+        metodo para utilização do PUT e DELETE
+            npm install method-override --save

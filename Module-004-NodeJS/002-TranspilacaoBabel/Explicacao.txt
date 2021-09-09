@@ -1,0 +1,30 @@
+/*
+
+npm install @babel/core @babel/cli @babel/preset-env --save-dev
+o babel serve para converter linguagens novas de js para mais antigas para que navegadores mais antigos consigam usar
+
+@babel/core  --> base para funcionar o babel
+@babel/cli --> para usar por linha de comando
+@babel/present-env --> pacote para converter qualquer versão do ES6 para ES5
+
+--save-dev --> inclui apenas no dev dependencies, pq não é usado em produção, só para dev.
+agora para converter esse arquivo deve ser usado o comando:
+npx babel .\index.js
+function testingES8(text1, text2) {
+  alert(`${text1}\n${text2}`);
+}
+
+--> esse comando serve para mostrar como ficaria a conversão
+
+--> caso fosse salvar o arquivo faria o seguinte com o "-o" que é de output:
+npx babel .\index.js -o compiled-index.js
+
+--> pode colocar para setar/converter para determinada extensão:
+npx babel .\index.js -o compiled-index2.js --presets=@babel/preset-env
+É possivel transpilar um diretório inteiro e fazer o output para outro diretório:
+
+npx babel .\src\ --out-dir dist --presets=@babel/preset-env
+
+
+após instalar o babel.config.js inclui as configurações no arquivo e usei o seguinte comando:
+npx babel .\src\ --out-dir dist2

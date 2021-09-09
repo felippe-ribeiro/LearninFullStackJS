@@ -1,0 +1,19 @@
+Foi feito 
+npm init
+
+executei o comando:
+npx babel .\index.js -o transpiled.js
+que é exatamente a mesma coisa (só não funciona, pois geralmente execu):
+.\node_modules\.bin\babel .\index.js -o transpiledWithOutNPX.js
+
+explicado a possibilidade de instalar o aplicações pelo npm como por exemplo
+npm install http-server
+quer inicia o server http na pasta que foi instalado e usa a pasta public como inicialização
+
+
+--agora vamos criar atalhos para o comando do babel
+na pasta package.json tem a tag scripts
+usada para criar atalhos para comando, exemplo:
+"build": "npx babel index.js -o transpiled.js
+
+agora para executar esse script criado, basta eu digitar: npm run build, ai ele executa o script build que foi o que chamei
